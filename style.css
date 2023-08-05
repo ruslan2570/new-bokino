@@ -3,79 +3,258 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-a, h1, h2,h3,h4,h5,h6, p, span{
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
     color: #EEEEEE;
+    font-style: normal;
+    line-height: normal;
+    font-family: Jost;
 }
 
 a {
     text-decoration: none;
 }
 
-body{
+body {
     background-color: #1E1E1E;
 }
 
-header{
+h1 {
+    font-size: 32px;
+}
+
+header {
     width: 100%;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.header_container{
-    display: flex;    
+.header_container {
+    display: flex;
     justify-content: space-between;
-    padding: 40px 300px 30px 150px;
-    
+    align-items: center;
+    padding: 30px 300px 30px 100px;
+
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
 }
 
-nav > a {
+nav>a {
     padding: 0px 30px;
+}
+
+main {
+    margin-top: 34px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 128px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+section {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    width: 60%;
+    height: 204px;
+    border-radius: 50px;
+    background-color: #393E46;
+    margin-bottom: 45px;
+}
+
+.card_content {
+    display: flex;
+    padding: 40px 0px 50px 37px;
+}
+
+.card_content_text {
+    padding: 25px;
+    padding-top: 5px;
+}
+
+
+.goto_container {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    margin-left: 200px;
+    
+}
+
+.goto_container>p {
+    font-size: 24px;
+    font-weight: 700;
+    padding-right: 15px;
+}
+
+.radio_container {
+    padding-top: 15px;
+}
+
+.radio_btn {
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    background: #D9D9D9;
+    width: 75px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+#reset_btn{
+    margin-left: 30px;
 }

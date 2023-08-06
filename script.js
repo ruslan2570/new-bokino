@@ -1,7 +1,7 @@
 var i = 0;
 var j = 0;
 var txt = "IT'S NEW-BOKINO_"; /* The text */
-var typingSpeed = 50; /* The speed/duration of the effect in milliseconds */
+var typingSpeed = 75; /* The speed/duration of the effect in milliseconds */
 var blinkingSpeed = 500; /* The speed/duration of the effect in milliseconds */
 
 async function typeWriter() {
@@ -137,4 +137,10 @@ restart = function () {
     fetch("https://vlc-controller.new-bokino.ru/restart", requestOptions)
 
     setTimeout(info, 1000);
+}
+
+function qiwiHandler(e){
+    if (e.key === 'Enter') {
+        openQiwi();
+    }
 }

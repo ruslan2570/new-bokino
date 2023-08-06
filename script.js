@@ -38,3 +38,81 @@ function openQiwi() {
         open("https://oplata.qiwi.com/create?publicKey=48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iP5Np5PoBuYLf9tkRJkAvwZA7FkGHfV8eaqQPiNcXgKpPJyKRLuF9EQBAYrXJ3Zx46jq13jEC69yVpkCddFSEjj6YFp6V8gXVg3BuYvz8Li");
     }
 }
+
+let error_count = 0;
+
+info = function () {
+    var name = document.getElementById("song_name");
+
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+    };
+
+    fetch("https://vlc-controller.new-bokino.ru/info", requestOptions)
+        .then(response => response.text())
+        .then(result => {
+            console.log(result);
+            var json = JSON.parse(result);
+
+            if(json['artist'] == null || json['title'] == null){
+                name.innerText = json['filename'];
+            } else{
+                name.innerText = json['artist'] + " - " + json['title'];
+            }
+        })
+        .catch(error => {
+            console.log('error', error)
+            if(error_count++ >= 10){
+                clearInterval(infoInterval);
+                console.log("stopped");
+            }
+                
+        }
+            );
+}
+
+let infoInterval = setInterval(info, 1000)
+
+
+prev = function(){
+    clearInterval(infoInterval);
+    error_count = 0;
+    infoInterval = setInterval(info, 1000)
+
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+    };
+
+    fetch("https://vlc-controller.new-bokino.ru/prev", requestOptions).then(info());
+
+}
+
+next = function(){
+    clearInterval(infoInterval);
+    error_count = 0;
+    infoInterval = setInterval(info, 1000)
+ 
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+    };
+
+    fetch("https://vlc-controller.new-bokino.ru/next", requestOptions).then(info());
+}
+
+restart = function(){
+    clearInterval(infoInterval);
+    error_count = 0;
+    infoInterval = setInterval(info, 1000)
+ 
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+    };
+
+    fetch("https://vlc-controller.new-bokino.ru/restart", requestOptions)
+
+	setTimeout(info, 1000);
+}

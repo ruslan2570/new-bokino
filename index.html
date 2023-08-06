@@ -5,9 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Проекты и сервисы New-bokino: Bobr-Coin, FileBrowser, радио">
+    <meta name="keywords" content="">
+
     <script src="script.js" defer></script>
     <link href="style.css" rel="stylesheet">
-    <title>new-bokino.ru</title>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(87684965, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/87684965" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <title>New-Bokino.ru</title>
 </head>
 
 <body>
@@ -140,15 +164,40 @@
         <section id="etc">
             <h2>Etc.</h2>
 
+            <article class="card etc_card">
+                <div class="card_content">
+                    <img src="img/qiwi_logo.png" height="128" width="128">
+                    <div class="card_content_text">
+                        <h3>Donate</h3>
+                        <input id="amount_input" onkeyup="qiwiHandler(event)" placeholder="Amount">
+                    </div>
+                </div>
+                <a href="javascript:openQiwi()">
+                    <div class="goto_container">
+                        <p>Go to</p>
+                        <svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="16" x2="25" y2="16" stroke="white" stroke-width="4" />
+                            <line y1="-2" x2="17.5183" y2="-2"
+                                transform="matrix(0.636482 0.771292 -0.636482 0.771292 30 4)" stroke="white"
+                                stroke-width="4" />
+                            <line y1="-2" x2="17.5573" y2="-2"
+                                transform="matrix(0.637803 -0.7702 0.63516 0.772381 30.802 30)" stroke="white"
+                                stroke-width="4" />
+                        </svg>
+                    </div>
+                </a>
+            </article>
+
+            <a href="https://www.tinkoff.ru/baf/2qf6J0JEHcD" target="_blank">
                 <article class="card etc_card">
                     <div class="card_content">
-                        <img src="img/qiwi_logo.png" height="128" width="128">
+                        <img src="img/tinkoff_logo.png" height="128" width="128">
                         <div class="card_content_text">
-                            <h3>Donate</h3>
-                            <input id="amount_input" onkeyup="qiwiHandler(event)" placeholder="Amount">
+                            <h3>Tinkoff</h3>
+                            <p>Такой один</p>
                         </div>
                     </div>
-                    <a href="javascript:openQiwi()">
+                    <a href="https://www.tinkoff.ru/baf/2qf6J0JEHcD" target="_blank">
                         <div class="goto_container">
                             <p>Go to</p>
                             <svg width="44" height="30" viewBox="0 0 44 30" fill="none"
@@ -164,57 +213,33 @@
                         </div>
                     </a>
                 </article>
-
-            <a href="https://www.tinkoff.ru/baf/2qf6J0JEHcD" target="_blank">
-            <article class="card etc_card">
-                <div class="card_content">
-                    <img src="img/tinkoff_logo.png" height="128" width="128">
-                    <div class="card_content_text">
-                        <h3>Tinkoff</h3>
-                        <p>Такой один</p>
-                    </div>
-                </div>
-                <a href="https://www.tinkoff.ru/baf/2qf6J0JEHcD" target="_blank">
-                    <div class="goto_container">
-                        <p>Go to</p>
-                        <svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line y1="16" x2="25" y2="16" stroke="white" stroke-width="4" />
-                            <line y1="-2" x2="17.5183" y2="-2"
-                                transform="matrix(0.636482 0.771292 -0.636482 0.771292 30 4)" stroke="white"
-                                stroke-width="4" />
-                            <line y1="-2" x2="17.5573" y2="-2"
-                                transform="matrix(0.637803 -0.7702 0.63516 0.772381 30.802 30)" stroke="white"
-                                stroke-width="4" />
-                        </svg>
-                    </div>
-                </a>
-            </article>
             </a>
 
             <a href="https://jino.ru/?pl=81b25d04" target="_blank">
-            <article class="card etc_card">
-                <div class="card_content">
-                    <img src="img/jino_logo.png" height="128" width="128">
-                    <div class="card_content_text">
-                        <h3>Jino</h3>
-                        <p>Хостинг, домены, облачные сервисы</p>
+                <article class="card etc_card">
+                    <div class="card_content">
+                        <img src="img/jino_logo.png" height="128" width="128">
+                        <div class="card_content_text">
+                            <h3>Jino</h3>
+                            <p>Хостинг, домены, облачные сервисы</p>
+                        </div>
                     </div>
-                </div>
-                <a href="https://jino.ru/?pl=81b25d04" target="_blank">
-                    <div class="goto_container">
-                        <p>Go to</p>
-                        <svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line y1="16" x2="25" y2="16" stroke="white" stroke-width="4" />
-                            <line y1="-2" x2="17.5183" y2="-2"
-                                transform="matrix(0.636482 0.771292 -0.636482 0.771292 30 4)" stroke="white"
-                                stroke-width="4" />
-                            <line y1="-2" x2="17.5573" y2="-2"
-                                transform="matrix(0.637803 -0.7702 0.63516 0.772381 30.802 30)" stroke="white"
-                                stroke-width="4" />
-                        </svg>
-                    </div>
-                </a>
-            </article>
+                    <a href="https://jino.ru/?pl=81b25d04" target="_blank">
+                        <div class="goto_container">
+                            <p>Go to</p>
+                            <svg width="44" height="30" viewBox="0 0 44 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line y1="16" x2="25" y2="16" stroke="white" stroke-width="4" />
+                                <line y1="-2" x2="17.5183" y2="-2"
+                                    transform="matrix(0.636482 0.771292 -0.636482 0.771292 30 4)" stroke="white"
+                                    stroke-width="4" />
+                                <line y1="-2" x2="17.5573" y2="-2"
+                                    transform="matrix(0.637803 -0.7702 0.63516 0.772381 30.802 30)" stroke="white"
+                                    stroke-width="4" />
+                            </svg>
+                        </div>
+                    </a>
+                </article>
             </a>
         </section>
     </main>

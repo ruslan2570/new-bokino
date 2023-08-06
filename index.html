@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
     <link href="style.css" rel="stylesheet">
-    <title>IT'S NEW-BOKINO</title>
+    <title>new-bokino.ru</title>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <div class="header_container">
 
 
-            <h1>IT'S NEW-BOKINO_</h1>
+            <h1></h1>
             <nav>
                 <a href="#projects">Projects</a>
                 <a href="#services">Services</a>
@@ -24,11 +25,11 @@
     </header>
 
     <main>
-        <section>
+        <section id="projects">
 
             <h2>Projects</h2>
 
-            <article class="card">
+            <article class="card project_card">
                 <div class="card_content">
                     <img src="img/bobr_logo.png" height="128" width="128">
                     <div class="card_content_text">
@@ -36,39 +37,53 @@
                         <p>Покупай бобров, пока не поздно</p>
                     </div>
                 </div>
-                <div class="goto_container">
-                    <p>Go to</p>
-                    <svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="16" x2="25" y2="16" stroke="white" stroke-width="4"/>
-                        <line y1="-2" x2="17.5183" y2="-2" transform="matrix(0.636482 0.771292 -0.636482 0.771292 30 4)" stroke="white" stroke-width="4"/>
-                        <line y1="-2" x2="17.5573" y2="-2" transform="matrix(0.637803 -0.7702 0.63516 0.772381 30.802 30)" stroke="white" stroke-width="4"/>
-                      </svg>
-                </div>
+
+                <a href="http://bobr-coin.new-bokino.ru/" target="_blank">
+                    <div class="goto_container">
+
+                        <p>Go to</p>
+                        <svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="16" x2="25" y2="16" stroke="white" stroke-width="4" />
+                            <line y1="-2" x2="17.5183" y2="-2"
+                                transform="matrix(0.636482 0.771292 -0.636482 0.771292 30 4)" stroke="white"
+                                stroke-width="4" />
+                            <line y1="-2" x2="17.5573" y2="-2"
+                                transform="matrix(0.637803 -0.7702 0.63516 0.772381 30.802 30)" stroke="white"
+                                stroke-width="4" />
+                        </svg>
+                    </div>
+                </a>
             </article>
 
-            <article class="card">
+            <article class="card project_card">
                 <div class="card_content">
                     <img src="img/project_logo.png" height="128" width="128">
                     <div class="card_content_text">
                         <h3>Кино.New-Bokino</h3>
-                        <p>Минимум функциональности - 
+                        <p>Минимум функциональности -
                             максимум <strike>рекламы</strike> кино</p>
                     </div>
                 </div>
-                <div class="goto_container">
-                    <p>Go to</p>
-                    <svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="16" x2="25" y2="16" stroke="white" stroke-width="4"/>
-                        <line y1="-2" x2="17.5183" y2="-2" transform="matrix(0.636482 0.771292 -0.636482 0.771292 30 4)" stroke="white" stroke-width="4"/>
-                        <line y1="-2" x2="17.5573" y2="-2" transform="matrix(0.637803 -0.7702 0.63516 0.772381 30.802 30)" stroke="white" stroke-width="4"/>
-                      </svg>
-                </div>
+                <a href="http://kino.new-bokino.ru/" target="_blank">
+                    <div class="goto_container">
+                        <p>Go to</p>
+                        <svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="16" x2="25" y2="16" stroke="white" stroke-width="4" />
+                            <line y1="-2" x2="17.5183" y2="-2"
+                                transform="matrix(0.636482 0.771292 -0.636482 0.771292 30 4)" stroke="white"
+                                stroke-width="4" />
+                            <line y1="-2" x2="17.5573" y2="-2"
+                                transform="matrix(0.637803 -0.7702 0.63516 0.772381 30.802 30)" stroke="white"
+                                stroke-width="4" />
+                        </svg>
+                    </div>
+                </a>
             </article>
 
-            <article class="card">
+            <article class="card project_card">
                 <div class="card_content">
                     <img src="img/project_logo.png" height="128" width="128">
-                    <div class="card_content_text">
+                    <div class="card_content_radio">
                         <h3>Радио</h3>
                         <p id="song_name">Операция пластилин - Сон на взлетной полосе</p>
                         <div class="radio_container">
@@ -84,14 +99,115 @@
 
         </section>
 
-        <section>
+        <section id="services">
+            <h2>Services</h2>
 
+            <article class="card service_card">
+                <div class="card_content">
+                    <img src="img/fb_logo.png" height="128" width="128">
+                    <div class="card_content_text">
+                        <h3>FileBrowser</h3>
+                        <p>Файловое хранилище</p>
+                    </div>
+                </div>
+                <a href="http://bobr-coin.new-bokino.ru/" target="_blank">
+                    <div class="goto_container">
+                        <p>Go to</p>
+                        <svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="16" x2="25" y2="16" stroke="white" stroke-width="4" />
+                            <line y1="-2" x2="17.5183" y2="-2"
+                                transform="matrix(0.636482 0.771292 -0.636482 0.771292 30 4)" stroke="white"
+                                stroke-width="4" />
+                            <line y1="-2" x2="17.5573" y2="-2"
+                                transform="matrix(0.637803 -0.7702 0.63516 0.772381 30.802 30)" stroke="white"
+                                stroke-width="4" />
+                        </svg>
+                    </div>
+                </a>
+            </article>
         </section>
 
-        <section>
+        <section id="etc">
+            <h2>Etc.</h2>
 
+            <article class="card etc_card">
+                <div class="card_content">
+                    <img src="img/qiwi_logo.png" height="128" width="128">
+                    <div class="card_content_text">
+                        <h3>Donate</h3>
+                        <input id="amount_input" placeholder="Amount">
+                    </div>
+                </div>
+                <a href="javascript:openQiwi()">
+                    <div class="goto_container">
+                        <p>Go to</p>
+                        <svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="16" x2="25" y2="16" stroke="white" stroke-width="4" />
+                            <line y1="-2" x2="17.5183" y2="-2"
+                                transform="matrix(0.636482 0.771292 -0.636482 0.771292 30 4)" stroke="white"
+                                stroke-width="4" />
+                            <line y1="-2" x2="17.5573" y2="-2"
+                                transform="matrix(0.637803 -0.7702 0.63516 0.772381 30.802 30)" stroke="white"
+                                stroke-width="4" />
+                        </svg>
+                    </div>
+                </a>
+
+            </article>
+
+            <article class="card etc_card">
+                <div class="card_content">
+                    <img src="img/tinkoff_logo.png" height="128" width="128">
+                    <div class="card_content_text">
+                        <h3>Tinkoff</h3>
+                        <p>Такой один</p>
+                    </div>
+                </div>
+                <a href="https://www.tinkoff.ru/baf/2qf6J0JEHcD" target="_blank">
+                    <div class="goto_container">
+                        <p>Go to</p>
+                        <svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="16" x2="25" y2="16" stroke="white" stroke-width="4" />
+                            <line y1="-2" x2="17.5183" y2="-2"
+                                transform="matrix(0.636482 0.771292 -0.636482 0.771292 30 4)" stroke="white"
+                                stroke-width="4" />
+                            <line y1="-2" x2="17.5573" y2="-2"
+                                transform="matrix(0.637803 -0.7702 0.63516 0.772381 30.802 30)" stroke="white"
+                                stroke-width="4" />
+                        </svg>
+                    </div>
+                </a>
+            </article>
+
+            <article class="card etc_card">
+                <div class="card_content">
+                    <img src="img/jino_logo.png" height="128" width="128">
+                    <div class="card_content_text">
+                        <h3>Jino</h3>
+                        <p>Хостинг, регистрация доменов, облачные сервисы</p>
+                    </div>
+                </div>
+                <a href="https://jino.ru/?pl=81b25d04" target="_blank">
+                    <div class="goto_container">
+                        <p>Go to</p>
+                        <svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="16" x2="25" y2="16" stroke="white" stroke-width="4" />
+                            <line y1="-2" x2="17.5183" y2="-2"
+                                transform="matrix(0.636482 0.771292 -0.636482 0.771292 30 4)" stroke="white"
+                                stroke-width="4" />
+                            <line y1="-2" x2="17.5573" y2="-2"
+                                transform="matrix(0.637803 -0.7702 0.63516 0.772381 30.802 30)" stroke="white"
+                                stroke-width="4" />
+                        </svg>
+                    </div>
+                </a>
+            </article>
         </section>
     </main>
+
+    <footer>
+        <p>its{m4k3d_W1t_l0V3}</p>
+    </footer>
 
 </body>
 
